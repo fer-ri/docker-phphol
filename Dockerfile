@@ -38,3 +38,5 @@ RUN apt-get update && apt-get upgrade -y \
     && mkdir -p /.composer \
     && chmod -R ugo+rw /.composer \
     && usermod -u 1000 www-data
+
+COPY php.ini /usr/local/etc/php/conf.d/php.ini
